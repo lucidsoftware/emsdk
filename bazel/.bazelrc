@@ -1,1 +1,9 @@
 build --incompatible_enable_cc_toolchain_resolution
+
+common --worker_sandboxing
+
+common --incompatible_modify_execution_info_additive
+common --experimental_output_paths=strip
+common --modify_execution_info=CppArchive=+supports-path-mapping
+common --modify_execution_info=CppCompile=+supports-path-mapping
+common --modify_execution_info=CppModuleMap=+supports-path-mapping
