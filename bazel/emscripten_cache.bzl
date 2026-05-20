@@ -123,6 +123,7 @@ def _emscripten_cache_repository_impl(repository_ctx):
             environment = {
                 "EM_IGNORE_SANITY": "1",
                 "EM_NODE_JS": "empty",
+                "EMCC_LOGGING": "0",
             },
         )
         if result.return_code != 0:
